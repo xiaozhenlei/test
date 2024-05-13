@@ -1,8 +1,8 @@
 name: test
-on:
-  workflow_dispatch:
-  schedule:
-    # IMPORTANT: Set cron job in UTC timezone
+于:
+  工作流程调度:
+  日程:
+    # IMPORTANT: Set cr关于 job 在 UTC timezone
     - cron:  '0 18 * * *'
 
 jobs:
@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-        with:
-          python-version: '3.8.0'
+        包含:
+          python-version: '3.11'
       - run: pip install requests
       - run: python src/time.py
       
